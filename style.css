@@ -23,8 +23,8 @@ html {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    color: #1f2933;
-    background-color: #ffffff;
+    color: var(--text);
+    background-color: var(--cream);
     line-height: 1.7;
 }
 
@@ -46,10 +46,11 @@ nav {
 nav strong {
     font-size: 15px;
     letter-spacing: 1.5px;
+    color: var(--navy);
 }
 
 nav a {
-    color: #4b5563;
+    color: var(--blue);
     text-decoration: none;
     margin-left: 28px;
     font-size: 15px;
@@ -84,7 +85,7 @@ header {
     font-weight: bold;
     letter-spacing: 3px;
     margin: 0 0 20px 0;
-    color: #53606d;
+    color: var(--blue);
 }
 
 header h1 {
@@ -92,13 +93,14 @@ header h1 {
     line-height: 1.1;
     margin: 0 0 18px 0;
     letter-spacing: -2px;
+    color: var(--navy);
 }
 
 header h2 {
     font-size: 23px;
     font-weight: normal;
     margin: 0 0 8px 0;
-    color: #1f2933;
+    color: var(--navy);
 }
 
 .institution {
@@ -129,19 +131,18 @@ header h2 {
     display: inline-block;
     padding: 11px 20px;
 
-    background-color: #1f2933;
-    color: white;
+    background-color: var(--navy);
+    color: var(--white);
 
     text-decoration: none;
-    border: 1px solid #1f2933;
+    border: 1px solid var(--navy);
     border-radius: 4px;
 }
 
 .hero-links .secondary-button {
     background-color: transparent;
-    color: #1f2933;
+    color: var(--navy);
 }
-
 
 /* PROFILE PHOTO */
 
@@ -170,7 +171,7 @@ section {
     max-width: 1100px;
     margin: 0 auto;
     padding: 100px 40px;
-    border-top: 1px solid #e5e7eb;
+   border-top: 1px solid var(--border);
 }
 
 section > h2 {
@@ -178,12 +179,14 @@ section > h2 {
     margin-top: 0;
     margin-bottom: 50px;
     letter-spacing: -1px;
+    color: var(--navy);
 }
 
 section h3 {
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 5px;
+    color: var(--navy);
 }
 
 section p {
@@ -210,7 +213,7 @@ footer {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border);
 
     color: #6b7280;
     font-size: 14px;
