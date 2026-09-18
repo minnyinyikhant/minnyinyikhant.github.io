@@ -1,0 +1,195 @@
+/* ------------------------------
+   BASIC PAGE SETTINGS
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2933;
+    background-color: #ffffff;
+    line-height: 1.7;
+}
+
+
+/* ------------------------------
+   NAVIGATION
+------------------------------ */
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 28px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav strong {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+nav a {
+    color: #4b5563;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #000000;
+}
+
+
+/* ------------------------------
+   INTRODUCTION
+------------------------------ */
+
+header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 130px 40px 150px 40px;
+}
+
+header > p:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+    letter-spacing: -2px;
+}
+
+header h2 {
+    font-size: 23px;
+    font-weight: normal;
+    color: #53606d;
+    margin-bottom: 35px;
+}
+
+header p {
+    max-width: 700px;
+    font-size: 18px;
+    color: #53606d;
+}
+
+header a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+
+    background-color: #1f2933;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* ------------------------------
+   SECTIONS
+------------------------------ */
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    border-top: 1px solid #e5e7eb;
+}
+
+section > h2 {
+    font-size: 38px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
+}
+
+section h3 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+section p {
+    max-width: 760px;
+    color: #53606d;
+    font-size: 17px;
+}
+
+
+/* ------------------------------
+   LINKS
+------------------------------ */
+
+section a {
+    color: #1f2933;
+}
+
+
+/* ------------------------------
+   FOOTER
+------------------------------ */
+
+footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    border-top: 1px solid #e5e7eb;
+
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ------------------------------
+   MOBILE
+------------------------------ */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 22px;
+    }
+
+    nav div {
+        display: none;
+    }
+
+    header {
+        padding: 90px 22px 110px 22px;
+    }
+
+    header h1 {
+        font-size: 44px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    section {
+        padding: 70px 22px;
+    }
+
+    section > h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        padding: 30px 22px;
+    }
+}
