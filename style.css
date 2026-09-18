@@ -57,48 +57,98 @@ nav a:hover {
 header {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 130px 40px 150px 40px;
+    padding: 110px 40px 140px 40px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.8fr;
+    gap: 80px;
+    align-items: center;
 }
 
-header > p:first-child {
-    font-size: 14px;
+.hero-text {
+    max-width: 700px;
+}
+
+.eyebrow {
+    font-size: 13px;
     font-weight: bold;
     letter-spacing: 3px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
+    color: #53606d;
 }
 
 header h1 {
-    font-size: 64px;
+    font-size: 58px;
     line-height: 1.1;
-    margin: 0 0 20px 0;
+    margin: 0 0 18px 0;
     letter-spacing: -2px;
 }
 
 header h2 {
     font-size: 23px;
     font-weight: normal;
-    color: #53606d;
-    margin-bottom: 35px;
+    margin: 0 0 8px 0;
+    color: #1f2933;
 }
 
-header p {
-    max-width: 700px;
+.institution {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #53606d;
+    margin: 0 0 30px 0;
+}
+
+.intro {
+    max-width: 650px;
     font-size: 18px;
+    line-height: 1.8;
     color: #53606d;
+    margin-bottom: 30px;
 }
 
-header a {
+
+/* HERO BUTTONS */
+
+.hero-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.hero-links a {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 22px;
+    padding: 11px 20px;
 
     background-color: #1f2933;
     color: white;
 
     text-decoration: none;
-    border-radius: 5px;
+    border: 1px solid #1f2933;
+    border-radius: 4px;
 }
 
+.hero-links .secondary-button {
+    background-color: transparent;
+    color: #1f2933;
+}
+
+
+/* PROFILE PHOTO */
+
+.hero-photo {
+    width: 100%;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 430px;
+
+    object-fit: cover;
+    object-position: center 25%;
+
+    display: block;
+    border-radius: 4px;
+}
 
 /* ------------------------------
    SECTIONS
@@ -170,15 +220,48 @@ footer {
     }
 
     header {
-        padding: 90px 22px 110px 22px;
+        padding: 70px 22px 90px 22px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+        align-items: stretch;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-photo {
+        order: 2;
+        max-width: 320px;
+    }
+
+    .hero-photo img {
+        height: 380px;
+        object-fit: cover;
+        object-position: center 25%;
     }
 
     header h1 {
-        font-size: 44px;
+        font-size: 43px;
+        letter-spacing: -1.5px;
     }
 
     header h2 {
         font-size: 20px;
+    }
+
+    .institution {
+        font-size: 16px;
+    }
+
+    .intro {
+        font-size: 17px;
+    }
+
+    .hero-links {
+        flex-wrap: wrap;
     }
 
     section {
