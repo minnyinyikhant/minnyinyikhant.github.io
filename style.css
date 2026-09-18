@@ -24,7 +24,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
-    background-color: var(--cream);
+    background-color: var(--light-blue);
     line-height: 1.7;
 }
 
