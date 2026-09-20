@@ -467,9 +467,10 @@ main {
 }
 
 .quick-stat .stat-word {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    letter-spacing: 0;
 }
 
 .quick-stat span {
