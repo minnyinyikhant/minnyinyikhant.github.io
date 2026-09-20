@@ -590,7 +590,7 @@ main {
 
 
 /* ==========================================================
-   EXPERIENCE
+   PROFESSIONAL EXPERIENCE
    ========================================================== */
 
 .experience-grid {
@@ -603,7 +603,7 @@ main {
 .experience-card {
     position: relative;
 
-    padding: 26px;
+    padding: 22px 24px;
 
     background: var(--white);
 
@@ -617,7 +617,7 @@ main {
 }
 
 .experience-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 
     box-shadow: var(--shadow-hover);
 
@@ -625,16 +625,19 @@ main {
         rgba(65, 109, 140, 0.55);
 }
 
+
+/* Featured 360Ed card */
+
 .featured-card {
     grid-column: 1 / -1;
 
     display: grid;
 
     grid-template-columns:
-        minmax(230px, 0.8fr)
-        minmax(0, 1.35fr);
+        minmax(250px, 0.85fr)
+        minmax(0, 1.45fr);
 
-    column-gap: 45px;
+    column-gap: 32px;
 }
 
 .experience-header {
@@ -643,9 +646,12 @@ main {
     align-items: flex-start;
 }
 
+
+/* Larger company logo */
+
 .company-logo {
-    width: 150px;
-    height: 70px;
+    width: 190px;
+    height: 82px;
 
     object-fit: contain;
     object-position: left center;
@@ -659,7 +665,7 @@ main {
     background: var(--tag);
     color: var(--muted);
 
-    font-size: 11px;
+    font-size: 10px;
     white-space: nowrap;
 }
 
@@ -668,20 +674,20 @@ main {
 }
 
 .company-name {
-    margin: 12px 0 2px;
+    margin: 5px 0 2px;
 
     color: var(--blue);
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
 }
 
 .experience-info h3 {
-    margin: 0 0 3px;
+    margin: 0 0 2px;
 
     color: var(--navy);
 
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .location {
@@ -689,8 +695,11 @@ main {
 
     color: var(--muted);
 
-    font-size: 12px;
+    font-size: 11px;
 }
+
+
+/* Compact description */
 
 .experience-description {
     grid-column: 2;
@@ -700,12 +709,12 @@ main {
 
     color: var(--text);
 
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.6;
 }
 
 .experience-description p {
-    margin: 0 0 10px;
+    margin: 0 0 7px;
 }
 
 .experience-description p:last-child {
@@ -713,7 +722,7 @@ main {
 }
 
 
-/* Metrics */
+/* Compact metrics */
 
 .experience-metrics {
     grid-column: 1 / -1;
@@ -721,14 +730,14 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    margin-top: 23px;
+    margin-top: 16px;
 
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }
 
 .experience-metrics > div {
-    padding: 15px;
+    padding: 10px;
 
     text-align: center;
 }
@@ -742,41 +751,53 @@ main {
 
     color: var(--navy);
 
-    font-size: 22px;
+    font-size: 19px;
+    line-height: 1.25;
 }
 
 .experience-metrics span {
     color: var(--muted);
 
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
 /* ==========================================================
-   APP SHOWCASE
+   COMPACT APP SHOWCASE
    ========================================================== */
 
 .app-showcase {
     grid-column: 1 / -1;
 
-    margin-top: 25px;
-    padding-top: 22px;
+    margin-top: 16px;
+    padding-top: 15px;
 
     border-top: 1px solid var(--border);
+
+    display: grid;
+    grid-template-columns: 0.75fr 1.25fr;
+
+    column-gap: 32px;
+    row-gap: 12px;
 }
 
+
+/* Showcase heading spans both columns */
+
 .app-showcase-heading {
-    margin-bottom: 20px;
+    grid-column: 1 / -1;
+
+    margin-bottom: 0;
 }
 
 .products-heading {
-    margin: 0 0 3px;
+    margin: 0 0 2px;
 
     color: var(--navy);
 
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 700;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.7px;
 }
 
 .products-intro {
@@ -784,52 +805,51 @@ main {
 
     color: var(--muted);
 
-    font-size: 10px;
+    font-size: 9px;
 }
 
 
-/* App groups */
+/* Product groups */
 
 .app-group {
-    margin-bottom: 23px;
-}
-
-.app-group:last-child {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .product-category {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
 
     color: var(--blue);
 
     font-size: 8px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
 }
 
 
-/* Icon grid */
+/* Icon rows */
 
 .app-icon-grid {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 14px;
+    gap: 9px;
 }
+
+
+/* Smaller app icons */
 
 .app-icon {
     position: relative;
 
-    width: 72px;
-    height: 72px;
+    width: 54px;
+    height: 54px;
 
     display: block;
 
-    padding: 4px;
+    padding: 3px;
 
     border: 1px solid transparent;
-    border-radius: 17px;
+    border-radius: 13px;
 
     background: transparent;
 
@@ -850,15 +870,15 @@ main {
 
     object-fit: cover;
 
-    border-radius: 14px;
+    border-radius: 10px;
 }
 
 
-/* Clickable commercial apps */
+/* Commercial app hover */
 
 a.app-icon:hover {
     transform:
-        translateY(-5px)
+        translateY(-4px)
         scale(1.04);
 
     border-color: var(--border);
@@ -866,20 +886,20 @@ a.app-icon:hover {
     background: var(--white);
 
     box-shadow:
-        0 10px 25px rgba(23, 55, 94, 0.14);
+        0 8px 20px rgba(23, 55, 94, 0.13);
 }
 
 
-/* External link marker */
+/* Small external-link marker */
 
 .app-external {
     position: absolute;
 
-    right: -4px;
-    top: -4px;
+    right: -3px;
+    top: -3px;
 
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
 
     display: flex;
     align-items: center;
@@ -890,10 +910,10 @@ a.app-icon:hover {
     background: var(--navy);
     color: var(--white);
 
-    font-size: 9px;
+    font-size: 7px;
 
     box-shadow:
-        0 3px 8px rgba(23, 55, 94, 0.18);
+        0 2px 6px rgba(23, 55, 94, 0.18);
 
     transition: transform 0.2s ease;
 }
@@ -904,16 +924,16 @@ a.app-icon:hover .app-external {
 }
 
 
-/* Curriculum */
+/* Curriculum heading */
 
 .curriculum-heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    gap: 20px;
+    gap: 10px;
 
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .curriculum-heading .product-category {
@@ -923,8 +943,10 @@ a.app-icon:hover .app-external {
 .impact-link {
     color: var(--blue);
 
-    font-size: 9px;
+    font-size: 8px;
     font-weight: 700;
+
+    white-space: nowrap;
 
     text-decoration: none;
 }
@@ -932,6 +954,9 @@ a.app-icon:hover .app-external {
 .impact-link:hover {
     color: var(--navy);
 }
+
+
+/* Static curriculum app hover */
 
 .static-app {
     cursor: default;
@@ -943,11 +968,11 @@ a.app-icon:hover .app-external {
 
 .static-app:hover {
     transform:
-        translateY(-4px)
+        translateY(-3px)
         scale(1.03);
 
     box-shadow:
-        0 8px 20px rgba(23, 55, 94, 0.10);
+        0 7px 17px rgba(23, 55, 94, 0.10);
 }
 
 
@@ -959,20 +984,20 @@ a.app-icon:hover .app-external {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 7px;
+    gap: 6px;
 
-    margin-top: 18px;
+    margin-top: 12px;
 }
 
 .card-tags span {
-    padding: 5px 9px;
+    padding: 4px 8px;
 
     border-radius: 30px;
 
     background: var(--tag);
     color: var(--blue);
 
-    font-size: 10px;
+    font-size: 9px;
 
     transition:
         transform 0.2s ease,
@@ -1367,6 +1392,8 @@ footer a {
     }
 
 
+    /* Profile */
+
     .profile-section {
         margin-top: 12px;
         padding: 0 15px;
@@ -1402,6 +1429,8 @@ footer a {
     }
 
 
+    /* Quick stats */
+
     .quick-stats {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1419,6 +1448,8 @@ footer a {
     }
 
 
+    /* Story */
+
     .full-story {
         grid-template-columns: 1fr;
     }
@@ -1427,6 +1458,8 @@ footer a {
         max-height: 900px;
     }
 
+
+    /* Sections */
 
     .content-section {
         padding: 42px 20px;
@@ -1441,36 +1474,63 @@ footer a {
     }
 
 
+    /* Experience */
+
     .featured-card {
         display: block;
     }
 
+    .company-logo {
+        width: 165px;
+        height: 75px;
+    }
+
     .experience-description {
-        margin-top: 20px;
+        margin-top: 18px;
     }
 
     .experience-metrics {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .experience-metrics > div:not(:last-child) {
-        border-right: none;
-        border-bottom: 1px solid var(--border);
+
+    /* Apps return to vertical groups */
+
+    .app-showcase {
+        display: block;
     }
 
+    .app-showcase-heading {
+        margin-bottom: 14px;
+    }
+
+    .app-group {
+        margin-bottom: 16px;
+    }
+
+
+    /* Research */
 
     .research-grid {
         grid-template-columns: 1fr;
     }
 
+
+    /* Education */
+
     .education-grid {
         grid-template-columns: 1fr;
     }
+
+
+    /* Leadership */
 
     .leadership-grid {
         grid-template-columns: 1fr;
     }
 
+
+    /* Contact */
 
     .contact-section {
         margin: 20px 15px;
@@ -1509,22 +1569,36 @@ footer a {
     }
 
 
+    /* Experience */
+
     .experience-header {
         gap: 10px;
     }
 
     .company-logo {
-        width: 115px;
+        width: 145px;
+        height: 68px;
+    }
+
+    .experience-metrics {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-metrics > div:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
     }
 
 
+    /* Apps */
+
     .app-icon {
-        width: 62px;
-        height: 62px;
+        width: 50px;
+        height: 50px;
     }
 
     .app-icon-grid {
-        gap: 10px;
+        gap: 8px;
     }
 
     .curriculum-heading {
@@ -1534,14 +1608,18 @@ footer a {
     .impact-link {
         display: inline-block;
 
-        margin-top: 5px;
+        margin-top: 4px;
     }
 
+
+    /* Education */
 
     .education-item {
         grid-template-columns: 80px 1fr;
     }
 
+
+    /* Contact */
 
     .contact-links {
         flex-wrap: wrap;
