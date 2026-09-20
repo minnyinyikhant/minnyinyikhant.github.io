@@ -313,8 +313,8 @@ section p {
 }
 
 .company-logo {
-    width: 120px;
-    height: 65px;
+    width: 160px;
+    height: 75px;
 
     object-fit: contain;
     object-position: left center;
