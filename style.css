@@ -603,7 +603,7 @@ main {
 .experience-card {
     position: relative;
 
-    padding: 22px 24px;
+    padding: 20px 23px;
 
     background: var(--white);
 
@@ -626,7 +626,7 @@ main {
 }
 
 
-/* Featured 360Ed card */
+/* 360Ed top */
 
 .featured-card {
     grid-column: 1 / -1;
@@ -637,7 +637,7 @@ main {
         minmax(250px, 0.85fr)
         minmax(0, 1.45fr);
 
-    column-gap: 32px;
+    column-gap: 30px;
 }
 
 .experience-header {
@@ -646,12 +646,9 @@ main {
     align-items: flex-start;
 }
 
-
-/* Larger company logo */
-
 .company-logo {
     width: 190px;
-    height: 82px;
+    height: 78px;
 
     object-fit: contain;
     object-position: left center;
@@ -674,7 +671,7 @@ main {
 }
 
 .company-name {
-    margin: 5px 0 2px;
+    margin: 3px 0 2px;
 
     color: var(--blue);
 
@@ -699,7 +696,7 @@ main {
 }
 
 
-/* Compact description */
+/* Compact one-paragraph description */
 
 .experience-description {
     grid-column: 2;
@@ -710,19 +707,15 @@ main {
     color: var(--text);
 
     font-size: 12px;
-    line-height: 1.6;
+    line-height: 1.65;
 }
 
 .experience-description p {
-    margin: 0 0 7px;
-}
-
-.experience-description p:last-child {
-    margin-bottom: 0;
+    margin: 0;
 }
 
 
-/* Compact metrics */
+/* Metrics */
 
 .experience-metrics {
     grid-column: 1 / -1;
@@ -730,14 +723,14 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    margin-top: 16px;
+    margin-top: 14px;
 
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }
 
 .experience-metrics > div {
-    padding: 10px;
+    padding: 9px;
 
     text-align: center;
 }
@@ -751,47 +744,47 @@ main {
 
     color: var(--navy);
 
-    font-size: 19px;
+    font-size: 18px;
     line-height: 1.25;
 }
 
 .experience-metrics span {
     color: var(--muted);
 
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
 /* ==========================================================
-   COMPACT APP SHOWCASE
+   COMPACT PRODUCT SHOWCASE
    ========================================================== */
 
 .app-showcase {
     grid-column: 1 / -1;
 
-    margin-top: 16px;
-    padding-top: 15px;
+    margin-top: 13px;
+    padding-top: 13px;
 
     border-top: 1px solid var(--border);
 
     display: grid;
-    grid-template-columns: 0.75fr 1.25fr;
+    grid-template-columns: 0.8fr 1.2fr;
 
-    column-gap: 32px;
-    row-gap: 12px;
+    column-gap: 40px;
+    row-gap: 9px;
 }
 
 
-/* Showcase heading spans both columns */
+/* Heading */
 
 .app-showcase-heading {
     grid-column: 1 / -1;
 
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .products-heading {
-    margin: 0 0 2px;
+    margin: 0 0 1px;
 
     color: var(--navy);
 
@@ -805,18 +798,20 @@ main {
 
     color: var(--muted);
 
-    font-size: 9px;
+    font-size: 8px;
 }
 
 
 /* Product groups */
 
 .app-group {
+    min-width: 0;
+
     margin: 0;
 }
 
 .product-category {
-    margin: 0 0 8px;
+    margin: 0 0 7px;
 
     color: var(--blue);
 
@@ -826,30 +821,27 @@ main {
 }
 
 
-/* Icon rows */
+/* Icons */
 
 .app-icon-grid {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 9px;
+    gap: 8px;
 }
-
-
-/* Smaller app icons */
 
 .app-icon {
     position: relative;
 
-    width: 54px;
-    height: 54px;
+    width: 50px;
+    height: 50px;
 
     display: block;
 
-    padding: 3px;
+    padding: 2px;
 
     border: 1px solid transparent;
-    border-radius: 13px;
+    border-radius: 12px;
 
     background: transparent;
 
@@ -870,11 +862,11 @@ main {
 
     object-fit: cover;
 
-    border-radius: 10px;
+    border-radius: 9px;
 }
 
 
-/* Commercial app hover */
+/* Clickable commercial apps */
 
 a.app-icon:hover {
     transform:
@@ -890,7 +882,7 @@ a.app-icon:hover {
 }
 
 
-/* Small external-link marker */
+/* External link icon */
 
 .app-external {
     position: absolute;
@@ -898,8 +890,8 @@ a.app-icon:hover {
     right: -3px;
     top: -3px;
 
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
 
     display: flex;
     align-items: center;
@@ -914,8 +906,6 @@ a.app-icon:hover {
 
     box-shadow:
         0 2px 6px rgba(23, 55, 94, 0.18);
-
-    transition: transform 0.2s ease;
 }
 
 a.app-icon:hover .app-external {
@@ -924,29 +914,25 @@ a.app-icon:hover .app-external {
 }
 
 
-/* Curriculum heading */
+/* Curriculum */
 
 .curriculum-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
 
-    gap: 10px;
-
-    margin-bottom: 8px;
+    margin-bottom: 7px;
 }
 
 .curriculum-heading .product-category {
-    margin-bottom: 0;
+    margin-bottom: 1px;
 }
 
 .impact-link {
+    display: inline-block;
+
     color: var(--blue);
 
     font-size: 8px;
     font-weight: 700;
-
-    white-space: nowrap;
 
     text-decoration: none;
 }
@@ -954,9 +940,6 @@ a.app-icon:hover .app-external {
 .impact-link:hover {
     color: var(--navy);
 }
-
-
-/* Static curriculum app hover */
 
 .static-app {
     cursor: default;
@@ -976,7 +959,7 @@ a.app-icon:hover .app-external {
 }
 
 
-/* Experience tags */
+/* Skills */
 
 .card-tags {
     grid-column: 1 / -1;
@@ -984,9 +967,9 @@ a.app-icon:hover .app-external {
     display: flex;
     flex-wrap: wrap;
 
-    gap: 6px;
+    gap: 5px;
 
-    margin-top: 12px;
+    margin-top: 10px;
 }
 
 .card-tags span {
@@ -997,7 +980,7 @@ a.app-icon:hover .app-external {
     background: var(--tag);
     color: var(--blue);
 
-    font-size: 9px;
+    font-size: 8px;
 
     transition:
         transform 0.2s ease,
@@ -1378,7 +1361,7 @@ footer a {
 
 
 /* ==========================================================
-   TABLET / MOBILE
+   TABLET
    ========================================================== */
 
 @media (max-width: 800px) {
@@ -1391,8 +1374,6 @@ footer a {
         display: none;
     }
 
-
-    /* Profile */
 
     .profile-section {
         margin-top: 12px;
@@ -1429,8 +1410,6 @@ footer a {
     }
 
 
-    /* Quick stats */
-
     .quick-stats {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1448,8 +1427,6 @@ footer a {
     }
 
 
-    /* Story */
-
     .full-story {
         grid-template-columns: 1fr;
     }
@@ -1458,8 +1435,6 @@ footer a {
         max-height: 900px;
     }
 
-
-    /* Sections */
 
     .content-section {
         padding: 42px 20px;
@@ -1482,11 +1457,11 @@ footer a {
 
     .company-logo {
         width: 165px;
-        height: 75px;
+        height: 72px;
     }
 
     .experience-description {
-        margin-top: 18px;
+        margin-top: 17px;
     }
 
     .experience-metrics {
@@ -1494,43 +1469,33 @@ footer a {
     }
 
 
-    /* Apps return to vertical groups */
+    /* Apps stack on tablet */
 
     .app-showcase {
         display: block;
     }
 
     .app-showcase-heading {
-        margin-bottom: 14px;
+        margin-bottom: 13px;
     }
 
     .app-group {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
     }
 
-
-    /* Research */
 
     .research-grid {
         grid-template-columns: 1fr;
     }
 
-
-    /* Education */
-
     .education-grid {
         grid-template-columns: 1fr;
     }
-
-
-    /* Leadership */
 
     .leadership-grid {
         grid-template-columns: 1fr;
     }
 
-
-    /* Contact */
 
     .contact-section {
         margin: 20px 15px;
@@ -1545,7 +1510,7 @@ footer a {
 
 
 /* ==========================================================
-   SMALL PHONE
+   PHONE
    ========================================================== */
 
 @media (max-width: 500px) {
@@ -1569,16 +1534,15 @@ footer a {
     }
 
 
-    /* Experience */
-
     .experience-header {
         gap: 10px;
     }
 
     .company-logo {
         width: 145px;
-        height: 68px;
+        height: 65px;
     }
+
 
     .experience-metrics {
         grid-template-columns: 1fr;
@@ -1590,15 +1554,13 @@ footer a {
     }
 
 
-    /* Apps */
-
     .app-icon {
-        width: 50px;
-        height: 50px;
+        width: 48px;
+        height: 48px;
     }
 
     .app-icon-grid {
-        gap: 8px;
+        gap: 7px;
     }
 
     .curriculum-heading {
@@ -1608,18 +1570,14 @@ footer a {
     .impact-link {
         display: inline-block;
 
-        margin-top: 4px;
+        margin-top: 3px;
     }
 
-
-    /* Education */
 
     .education-item {
         grid-template-columns: 80px 1fr;
     }
 
-
-    /* Contact */
 
     .contact-links {
         flex-wrap: wrap;
