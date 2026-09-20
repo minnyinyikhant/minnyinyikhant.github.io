@@ -828,24 +828,30 @@ main {
         max(30px, calc((100% - 1060px) / 2));
 }
 
+
+/* RESEARCH GRID */
+
 .research-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
     gap: 16px;
+
+    align-items: start;
 }
+
+
+/* RESEARCH CARD */
 
 .research-card {
     position: relative;
-
-    min-height: 290px;
 
     padding: 25px;
 
     background: var(--white);
 
     border: 1px solid var(--border);
-    border-radius: 12px;
+    border-radius: 14px;
 
     overflow: hidden;
 
@@ -856,69 +862,267 @@ main {
 }
 
 .research-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
 
     box-shadow: var(--shadow-hover);
 
     border-color: var(--blue);
 }
 
+
+/* LARGE BACKGROUND NUMBER */
+
 .research-number {
     position: absolute;
 
-    right: 20px;
-    top: 14px;
+    right: 18px;
+    top: 12px;
 
     color:
         rgba(65, 109, 140, 0.12);
 
     font-size: 48px;
     font-weight: 700;
+
+    pointer-events: none;
 }
+
+
+/* RESEARCH CATEGORY */
 
 .research-theme {
     position: relative;
 
-    margin: 0 0 25px;
+    max-width: 80%;
+
+    margin: 0 0 24px;
 
     color: var(--blue);
 
     font-size: 9px;
     font-weight: 700;
-    letter-spacing: 1.8px;
+    letter-spacing: 1.6px;
 }
+
+
+/* RESEARCH TITLE */
 
 .research-card h3 {
     position: relative;
 
-    margin: 0 0 13px;
+    min-height: 72px;
+
+    margin: 0 0 12px;
 
     color: var(--navy);
 
-    font-size: 17px;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 1.45;
 }
 
-.research-card > p:not(.research-theme) {
-    position: relative;
+
+/* SHORT DESCRIPTION */
+
+.research-short {
+    min-height: 78px;
+
+    margin: 0 0 16px;
 
     color: var(--muted);
 
-    font-size: 12px;
+    font-size: 11px;
     line-height: 1.65;
 }
 
-.research-meta {
-    position: absolute;
 
-    left: 25px;
-    bottom: 22px;
+/* RESEARCH TAGS */
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 6px;
+
+    margin-bottom: 15px;
+}
+
+.research-tags span {
+    padding: 4px 8px;
+
+    border-radius: 30px;
+
+    background: var(--tag);
+    color: var(--blue);
+
+    font-size: 9px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.research-tags span:hover {
+    transform: translateY(-2px);
+
+    background: #e2edf2;
+}
+
+
+/* RECOGNITION */
+
+.research-recognition {
+    width: fit-content;
+
+    margin: 0 0 13px;
+
+    padding: 5px 9px;
+
+    border-radius: 6px;
+
+    background:
+        rgba(65, 109, 140, 0.08);
+
+    color: var(--navy);
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+
+/* META */
+
+.research-meta {
+    display: block;
+
+    min-height: 30px;
+
+    margin: 0 0 13px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+
+/* EXPLORE BUTTON */
+
+.research-toggle {
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    color: var(--navy);
+
+    font-family: inherit;
+    font-size: 11px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.research-toggle span {
+    display: inline-block;
+
+    margin-left: 3px;
+
+    transition: transform 0.2s ease;
+}
+
+.research-toggle:hover {
+    color: var(--blue);
+}
+
+.research-toggle:hover span {
+    transform: translateX(4px);
+}
+
+
+/* HIDDEN RESEARCH DETAILS */
+
+.research-details {
+    max-height: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    margin-top: 0;
+
+    border-top: 1px solid transparent;
+
+    transition:
+        max-height 0.5s ease,
+        opacity 0.3s ease,
+        margin-top 0.4s ease,
+        padding-top 0.4s ease,
+        border-color 0.4s ease;
+}
+
+
+/* OPEN RESEARCH CARD */
+
+.research-card.open {
+    border-color: var(--blue);
+
+    box-shadow: var(--shadow);
+}
+
+.research-card.open .research-details {
+    max-height: 700px;
+
+    opacity: 1;
+
+    margin-top: 18px;
+    padding-top: 18px;
+
+    border-color: var(--border);
+}
+
+
+/* DETAILED INFORMATION */
+
+.research-detail {
+    margin-bottom: 17px;
+}
+
+.research-detail:last-child {
+    margin-bottom: 0;
+}
+
+.research-detail > span {
+    display: block;
+
+    margin-bottom: 4px;
 
     color: var(--blue);
 
-    font-size: 10px;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
+.research-detail p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+
+/* RECOGNITION INSIDE DETAILS */
+
+.recognition-detail {
+    padding: 11px;
+
+    border-radius: 8px;
+
+    background:
+        rgba(65, 109, 140, 0.06);
+}
 
 /* ==========================================================
    EDUCATION
