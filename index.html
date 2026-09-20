@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="Personal portfolio of Min Nyi Nyi Khant — public policy, education technology, research and Southeast Asia."
+    >
+
     <title>Min Nyi Nyi Khant</title>
 
     <link rel="stylesheet" href="style.css">
@@ -13,20 +18,21 @@
 
 <body>
 
-
     <!-- =========================================
          NAVIGATION
     ========================================== -->
 
-    <nav>
+    <nav class="navbar">
 
-        <strong>MIN NYI NYI KHANT</strong>
+        <a class="nav-name" href="#home">
+            MIN NYI NYI KHANT
+        </a>
 
-        <div>
-            <a href="#about">About</a>
+        <div class="nav-links">
             <a href="#experience">Experience</a>
             <a href="#research">Research</a>
             <a href="#education">Education</a>
+            <a href="#leadership">Leadership</a>
             <a href="#contact">Contact</a>
         </div>
 
@@ -34,478 +40,694 @@
 
 
 
-    <!-- =========================================
-         INTRODUCTION
-    ========================================== -->
-
-    <header>
-
-        <div class="hero-text">
-
-            <p class="eyebrow">HELLO, I'M</p>
+    <main>
 
 
-            <div class="identity">
+        <!-- =========================================
+             PROFILE / ABOUT
+        ========================================== -->
 
-                <div class="identity-text">
+        <section id="home" class="profile-section">
 
-                    <h1>Min Nyi Nyi Khant</h1>
+            <div class="profile-card">
 
-                    <h2>Master in Public Policy Candidate</h2>
 
-                    <p class="institution">
-                        Lee Kuan Yew School of Public Policy<br>
+                <!-- LEFT SIDE -->
+
+                <div class="profile-main">
+
+                    <p class="eyebrow">
+                        HELLO, I'M
+                    </p>
+
+                    <h1>
+                        Min Nyi Nyi Khant
+                    </h1>
+
+                    <p class="profile-role">
+                        Master in Public Policy Candidate
+                    </p>
+
+                    <p class="profile-institution">
+                        Lee Kuan Yew School of Public Policy ·
                         National University of Singapore
                     </p>
 
-                </div>
 
-
-                <div class="hero-photo">
-
-                    <img
-                        src="profile.jpg"
-                        alt="Portrait of Min Nyi Nyi Khant"
-                    >
-
-                </div>
-
-            </div>
-
-
-            <p class="intro">
-                My interests lie at the intersection of refugee protection,
-                migration, education, human rights, and public policy in
-                Southeast Asia.
-            </p>
-
-
-            <div class="hero-links">
-
-                <a href="#about">
-                    About Me
-                </a>
-
-                <a
-                    href="#research"
-                    class="secondary-button"
-                >
-                    View Research
-                </a>
-
-            </div>
-
-        </div>
-
-    </header>
-
-
-
-    <!-- =========================================
-         ABOUT
-    ========================================== -->
-
-    <section id="about">
-
-        <p class="section-label">ABOUT</p>
-
-
-        <div class="about-grid">
-
-
-            <!-- Main introduction -->
-
-            <div class="about-main">
-
-                <h2>About Me</h2>
-
-
-                <p class="about-lead">
-                    I work at the intersection of education technology,
-                    public policy, and research in Southeast Asia.
-                </p>
-
-
-                <p>
-                    My background combines more than six years in EdTech
-                    and product management with research and programme
-                    experience in refugee protection, migration, human
-                    rights, and education.
-                </p>
-
-
-                <button
-                    class="about-toggle"
-                    type="button"
-                >
-                    Read my full story ↓
-                </button>
-
-            </div>
-
-
-
-            <!-- Quick facts -->
-
-            <div class="about-facts">
-
-
-                <div class="fact">
-
-                    <span>Professional</span>
-
-                    <strong>6+ years</strong>
-
-                    <p>
-                        Education Technology &amp; Product Management
+                    <p class="profile-lead">
+                        I work at the intersection of
+                        <strong>education technology</strong>,
+                        <strong>public policy</strong>, and
+                        <strong>research</strong> in Southeast Asia.
                     </p>
 
-                </div>
+
+                    <p class="profile-summary">
+                        My background combines more than six years in
+                        EdTech and product management with research and
+                        programme experience in refugee protection,
+                        migration, human rights, and education.
+                    </p>
 
 
+                    <!-- Areas of work -->
 
-                <div class="fact">
+                    <div class="profile-tags">
 
-                    <span>Research Interests</span>
-
-                    <div class="interest-tags">
-
+                        <span>EdTech</span>
+                        <span>Public Policy</span>
                         <span>Refugee Protection</span>
                         <span>Migration</span>
                         <span>Human Rights</span>
-                        <span>Education</span>
 
                     </div>
+
+
+                    <button
+                        class="story-toggle"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        Read my full story
+                        <span class="toggle-arrow">↓</span>
+                    </button>
 
                 </div>
 
 
 
-               <div class="fact">
+                <!-- RIGHT SIDE -->
 
-    <span>Regional Focus</span>
+                <aside class="profile-side">
 
-    <strong>Southeast Asia</strong>
 
-</div>
+                    <div class="profile-photo">
+
+                        <img
+                            src="profile.jpg"
+                            alt="Portrait of Min Nyi Nyi Khant"
+                        >
+
+                    </div>
+
+
+                    <div class="profile-actions">
+
+                        <a
+                            href="https://www.linkedin.com/in/min-nyi-nyi-khant"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn ↗
+                        </a>
+
+                        <a href="#contact">
+                            Contact
+                        </a>
+
+                    </div>
+
+
+                    <div class="quick-stats">
+
+
+                        <div class="quick-stat">
+
+                            <strong>6+</strong>
+
+                            <span>
+                                Years in EdTech &amp;<br>
+                                Product Management
+                            </span>
+
+                        </div>
+
+
+                        <div class="quick-stat">
+
+                            <strong>350K+</strong>
+
+                            <span>
+                                Education product<br>
+                                users reached
+                            </span>
+
+                        </div>
+
+
+                        <div class="quick-stat">
+
+                            <strong>SEA</strong>
+
+                            <span>
+                                Regional<br>
+                                focus
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+                </aside>
+
+
+                <!-- EXPANDABLE STORY -->
+
+                <div class="full-story" id="full-story">
+
+                    <div class="story-column">
+
+                        <span class="story-label">
+                            PROFESSIONAL
+                        </span>
+
+                        <p>
+                            My professional background is rooted in
+                            education and technology. Since 2019, I have
+                            worked at 360Ed, managing digital education
+                            products and cross-functional projects serving
+                            more than 350,000 users. My work spans product
+                            and project management, monitoring and
+                            evaluation, digital content, and collaboration
+                            with government and international partners.
+                        </p>
+
+                    </div>
+
+
+                    <div class="story-column">
+
+                        <span class="story-label">
+                            RESEARCH
+                        </span>
+
+                        <p>
+                            My academic and research interests focus on
+                            refugee protection, migration, human rights,
+                            civilian protection, and regional policy in
+                            Southeast Asia. My research and fellowship
+                            experiences have included participatory
+                            research, human rights documentation, atrocity
+                            prevention, and refugee protection.
+                        </p>
+
+                    </div>
+
+                </div>
 
 
             </div>
 
-        </div>
+        </section>
 
 
 
-        <!-- Detailed biography
-             Hidden by default using CSS -->
+        <!-- =========================================
+             PROFESSIONAL EXPERIENCE
+        ========================================== -->
 
-        <div class="full-bio">
+        <section id="experience" class="content-section">
 
-            <p>
-                My professional background is rooted in education and
-                technology. Since 2019, I have worked at 360Ed, where I
-                have managed digital education products and cross-functional
-                projects serving more than 350,000 users. My work has
-                involved product and project management, monitoring and
-                evaluation, digital content, and collaboration with
-                government and international partners.
-            </p>
+            <div class="section-intro">
 
-
-            <p>
-                Alongside my professional work, my academic and research
-                interests increasingly focus on refugee protection,
-                migration, human rights, civilian protection, and regional
-                policy in Southeast Asia. Through research and fellowship
-                experiences with CRPI, ALTSEAN-Burma, the Refugee Studies
-                Centre at the University of Oxford, and other institutions,
-                I have worked on participatory research, human rights
-                documentation, atrocity prevention, and refugee protection.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         PROFESSIONAL EXPERIENCE
-    ========================================== -->
-
-    <section id="experience">
-
-        <p class="section-label">CAREER</p>
-
-
-        <div class="section-heading">
-
-            <h2>Professional Experience</h2>
-
-            <p>
-                Selected roles across education technology, research,
-                human rights, and programme development.
-            </p>
-
-        </div>
-
-
-
-        <div class="experience-grid">
-
-
-            <!-- 360Ed -->
-
-            <article class="experience-card featured-card">
-
-
-                <div class="card-top">
-
-                    <img
-                        class="company-logo"
-                        src="images/360ed-logo.png"
-                        alt="360Ed logo"
-                    >
-
-                    <span class="experience-date">
-                        2019 — Present
-                    </span>
-
+                <div>
+                    <p class="section-label">CAREER</p>
+                    <h2>Professional Experience</h2>
                 </div>
 
+                <p>
+                    Selected work across education technology,
+                    research, human rights, and programme development.
+                </p>
+
+            </div>
 
 
-                <div class="experience-title">
 
-                    <p class="company-name">
-                        360Ed
+            <div class="experience-grid">
+
+
+                <!-- 360Ed FEATURED CARD -->
+
+                <article class="experience-card featured-card">
+
+
+                    <div class="experience-header">
+
+                        <img
+                            class="company-logo"
+                            src="images/360ed-logo.png"
+                            alt="360Ed logo"
+                        >
+
+                        <span class="date-pill">
+                            2019 — Present
+                        </span>
+
+                    </div>
+
+
+                    <div class="experience-info">
+
+                        <p class="company-name">
+                            360Ed
+                        </p>
+
+                        <h3>
+                            Senior Product Manager
+                        </h3>
+
+                        <p class="location">
+                            Bangkok, Thailand
+                        </p>
+
+                    </div>
+
+
+                    <p class="experience-description">
+                        Leading education technology products and
+                        cross-functional projects across digital learning,
+                        product development, monitoring and evaluation,
+                        and content delivery.
+                    </p>
+
+
+                    <div class="experience-metrics">
+
+                        <div>
+                            <strong>6+ yrs</strong>
+                            <span>EdTech experience</span>
+                        </div>
+
+                        <div>
+                            <strong>350K+</strong>
+                            <span>users reached</span>
+                        </div>
+
+                        <div>
+                            <strong>20+</strong>
+                            <span>team members</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card-tags">
+
+                        <span>EdTech</span>
+                        <span>Product Management</span>
+                        <span>Project Management</span>
+                        <span>M&amp;E</span>
+
+                    </div>
+
+
+                    <a
+                        class="card-link"
+                        href="#"
+                    >
+                        Explore my work
+                        <span>→</span>
+                    </a>
+
+
+                </article>
+
+
+                <!-- Future cards will go here:
+                     CRPI
+                     ALTSEAN-Burma
+                     CSO Academy
+                     Spring University Myanmar
+                     ANFREL
+                -->
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             RESEARCH
+        ========================================== -->
+
+        <section id="research" class="content-section">
+
+            <div class="section-intro">
+
+                <div>
+                    <p class="section-label">RESEARCH</p>
+                    <h2>Selected Research</h2>
+                </div>
+
+                <p>
+                    Research on forced migration, refugee protection,
+                    human rights, and inclusion in Southeast Asia.
+                </p>
+
+            </div>
+
+
+
+            <div class="research-grid">
+
+
+                <article class="research-card">
+
+                    <span class="research-number">
+                        01
+                    </span>
+
+                    <p class="research-theme">
+                        REFUGEE PROTECTION
                     </p>
 
                     <h3>
-                        Senior Product Manager
+                        Thailand's Role in Shaping International
+                        Refugee Protection Without the 1951
+                        Refugee Convention
                     </h3>
 
-                    <p class="location">
-                        Bangkok, Thailand
+                    <p>
+                        Participatory Action Research examining
+                        refugee protection policies and practices
+                        in Thailand.
                     </p>
 
+                    <span class="research-meta">
+                        Participatory Action Research · 2024
+                    </span>
+
+                </article>
+
+
+
+                <article class="research-card">
+
+                    <span class="research-number">
+                        02
+                    </span>
+
+                    <p class="research-theme">
+                        FORCED MIGRATION
+                    </p>
+
+                    <h3>
+                        Are Refugees an Inevitable Consequence
+                        of Nation-States?
+                    </h3>
+
+                    <p>
+                        Capstone research exploring displacement,
+                        borders, and the relationship between
+                        refugees and modern nation-states.
+                    </p>
+
+                    <span class="research-meta">
+                        Refugee Studies Centre · Oxford · 2022
+                    </span>
+
+                </article>
+
+
+
+                <article class="research-card">
+
+                    <span class="research-number">
+                        03
+                    </span>
+
+                    <p class="research-theme">
+                        INCLUSION
+                    </p>
+
+                    <h3>
+                        Building LGBTIQA+ Inclusive Workplaces
+                        in Myanmar
+                    </h3>
+
+                    <p>
+                        Graduate research examining workplace
+                        inclusion and institutional practices
+                        in Myanmar.
+                    </p>
+
+                    <span class="research-meta">
+                        Graduate Research · 2021
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             EDUCATION
+        ========================================== -->
+
+        <section id="education" class="content-section">
+
+            <div class="section-intro">
+
+                <div>
+                    <p class="section-label">EDUCATION</p>
+                    <h2>Academic Background</h2>
                 </div>
 
+            </div>
 
 
-                <p class="experience-summary">
-                    Leading education technology products and
-                    cross-functional projects across digital learning,
-                    product development, monitoring and evaluation,
-                    and content delivery.
+
+            <div class="education-grid">
+
+
+                <article class="education-item">
+
+                    <span class="education-year">
+                        2026 — Present
+                    </span>
+
+                    <div>
+                        <h3>
+                            National University of Singapore
+                        </h3>
+
+                        <p>
+                            Master in Public Policy
+                        </p>
+
+                        <span>
+                            Lee Kuan Yew School of Public Policy
+                        </span>
+                    </div>
+
+                </article>
+
+
+
+                <article class="education-item">
+
+                    <span class="education-year">
+                        2023 — 2025
+                    </span>
+
+                    <div>
+                        <h3>
+                            Chulalongkorn University
+                        </h3>
+
+                        <p>
+                            Master of Arts in Southeast Asian Studies
+                        </p>
+                    </div>
+
+                </article>
+
+
+
+                <article class="education-item">
+
+                    <span class="education-year">
+                        2020 — 2021
+                    </span>
+
+                    <div>
+                        <h3>
+                            Peace Leadership &amp; Research Institute
+                        </h3>
+
+                        <p>
+                            Graduate Research Diploma in Peace Leadership
+                        </p>
+                    </div>
+
+                </article>
+
+
+
+                <article class="education-item">
+
+                    <span class="education-year">
+                        2014 — 2019
+                    </span>
+
+                    <div>
+                        <h3>
+                            Yangon University of Education
+                        </h3>
+
+                        <p>
+                            Bachelor of Education
+                        </p>
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             LEADERSHIP & VOLUNTEERING
+        ========================================== -->
+
+        <section id="leadership" class="content-section">
+
+            <div class="section-intro">
+
+                <div>
+                    <p class="section-label">BEYOND WORK</p>
+                    <h2>Leadership &amp; Volunteering</h2>
+                </div>
+
+                <p>
+                    Selected regional youth, community, and
+                    leadership experiences.
                 </p>
 
-
-
-                <div class="metric-grid">
-
-
-                    <div class="metric">
-
-                        <strong>6+ yrs</strong>
-
-                        <span>
-                            EdTech experience
-                        </span>
-
-                    </div>
-
-
-                    <div class="metric">
-
-                        <strong>350K+</strong>
-
-                        <span>
-                            users reached
-                        </span>
-
-                    </div>
-
-
-                    <div class="metric">
-
-                        <strong>20+</strong>
-
-                        <span>
-                            team members
-                        </span>
-
-                    </div>
-
-
-                </div>
+            </div>
 
 
 
-                <div class="tags">
-
-                    <span>EdTech</span>
-                    <span>Product Management</span>
-                    <span>Project Management</span>
-                    <span>M&amp;E</span>
-
-                </div>
+            <div class="leadership-grid">
 
 
+                <article class="leadership-card">
 
-                <a
-                    class="explore-link"
-                    href="#"
-                >
-                    Explore my work →
+                    <span>2025</span>
+
+                    <h3>
+                        SEALNet Project Indonesia
+                    </h3>
+
+                    <p>
+                        Read to Lead
+                    </p>
+
+                    <strong>
+                        Volunteer
+                    </strong>
+
+                </article>
+
+
+
+                <article class="leadership-card">
+
+                    <span>ASEAN Foundation</span>
+
+                    <h3>
+                        eMpowering Youths Across ASEAN
+                    </h3>
+
+                    <p>
+                        Regional youth programme
+                    </p>
+
+                    <strong>
+                        Youth Volunteer
+                    </strong>
+
+                </article>
+
+
+
+                <article class="leadership-card">
+
+                    <span>2018</span>
+
+                    <h3>
+                        YSI SEA
+                    </h3>
+
+                    <p>
+                        Social entrepreneurship and
+                        regional youth initiative
+                    </p>
+
+                    <strong>
+                        Fellow
+                    </strong>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CONTACT
+        ========================================== -->
+
+        <section id="contact" class="contact-section">
+
+            <p class="section-label">
+                CONTACT
+            </p>
+
+            <h2>
+                Let's connect.
+            </h2>
+
+            <p>
+                I'm always interested in conversations around
+                education, public policy, research, and Southeast Asia.
+            </p>
+
+
+            <div class="contact-links">
+
+                <a href="mailto:min-nyi-nyi-khant@u.nus.edu">
+                    Email me →
                 </a>
 
+                <a
+                    href="https://www.linkedin.com/in/min-nyi-nyi-khant"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
 
-            </article>
+            </div>
 
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================================
-         RESEARCH
-    ========================================== -->
-
-    <section id="research">
-
-        <p class="section-label">RESEARCH</p>
-
-        <h2>Selected Research</h2>
+        </section>
 
 
-        <h3>
-            Thailand's Role in Shaping International Refugee
-            Protection Without the 1951 Refugee Convention
-        </h3>
-
-        <p>
-            Participatory Action Research on refugee protection
-            policies and practices in Thailand.
-        </p>
-
-
-
-        <h3>
-            Are Refugees an Inevitable Consequence of Nation-States?
-        </h3>
-
-        <p>
-            Capstone paper completed through the Refugee Studies
-            Centre, University of Oxford.
-        </p>
-
-
-
-        <h3>
-            Building LGBTIQA+ Inclusive Workplaces in Myanmar
-        </h3>
-
-        <p>
-            Graduate research project completed at the Peace
-            Leadership &amp; Research Institute.
-        </p>
-
-    </section>
-
-
-
-    <!-- =========================================
-         EDUCATION
-    ========================================== -->
-
-    <section id="education">
-
-        <p class="section-label">EDUCATION</p>
-
-        <h2>Education</h2>
-
-
-        <h3>
-            National University of Singapore
-        </h3>
-
-        <p>
-            Master in Public Policy<br>
-            Lee Kuan Yew School of Public Policy
-        </p>
-
-
-
-        <h3>
-            Chulalongkorn University
-        </h3>
-
-        <p>
-            Master of Arts in Southeast Asian Studies
-        </p>
-
-
-
-        <h3>
-            Peace Leadership &amp; Research Institute
-        </h3>
-
-        <p>
-            Graduate Research Diploma in Peace Leadership
-        </p>
-
-
-
-        <h3>
-            Yangon University of Education
-        </h3>
-
-        <p>
-            Bachelor of Education
-        </p>
-
-    </section>
-
-
-
-    <!-- =========================================
-         CONTACT
-    ========================================== -->
-
-    <section id="contact">
-
-        <p class="section-label">CONTACT</p>
-
-        <h2>Get in Touch</h2>
-
-
-        <p>
-
-            Email:
-
-            <a href="mailto:min-nyi-nyi-khant@u.nus.edu">
-                min-nyi-nyi-khant@u.nus.edu
-            </a>
-
-        </p>
-
-
-        <p>
-
-            <a
-                href="https://www.linkedin.com/in/min-nyi-nyi-khant"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                LinkedIn
-            </a>
-
-        </p>
-
-    </section>
+    </main>
 
 
 
@@ -515,11 +737,48 @@
 
     <footer>
 
-        <p>
+        <span>
             © 2026 Min Nyi Nyi Khant
-        </p>
+        </span>
+
+        <a href="#home">
+            Back to top ↑
+        </a>
 
     </footer>
+
+
+
+    <!-- =========================================
+         INTERACTIONS
+    ========================================== -->
+
+    <script>
+
+        const storyButton =
+            document.querySelector(".story-toggle");
+
+        const fullStory =
+            document.querySelector(".full-story");
+
+        storyButton.addEventListener("click", function () {
+
+            const isOpen =
+                fullStory.classList.toggle("open");
+
+            storyButton.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            storyButton.innerHTML =
+                isOpen
+                ? 'Close my story <span class="toggle-arrow">↑</span>'
+                : 'Read my full story <span class="toggle-arrow">↓</span>';
+
+        });
+
+    </script>
 
 
 </body>
