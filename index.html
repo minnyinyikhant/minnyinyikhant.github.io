@@ -909,7 +909,34 @@
                 : 'Read my full story <span class="toggle-arrow">↓</span>';
 
         });
+/* Research card interactions */
 
+const researchButtons =
+    document.querySelectorAll(".research-toggle");
+
+researchButtons.forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+        const card =
+            button.closest(".research-card");
+
+        const isOpen =
+            card.classList.toggle("open");
+
+        button.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        button.innerHTML =
+            isOpen
+            ? 'Close research <span>↑</span>'
+            : 'Explore research <span>→</span>';
+
+    });
+
+});
     </script>
 
 </body>
