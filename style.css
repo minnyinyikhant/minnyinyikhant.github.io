@@ -3,7 +3,9 @@
    ========================================================== */
 
 
-/* ---------- DESIGN SYSTEM ---------- */
+/* ==========================================================
+   DESIGN SYSTEM
+   ========================================================== */
 
 :root {
     --navy: #17375e;
@@ -30,7 +32,9 @@
 }
 
 
-/* ---------- GLOBAL ---------- */
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
 
 * {
     box-sizing: border-box;
@@ -86,8 +90,7 @@ main {
     align-items: center;
     justify-content: space-between;
 
-    background:
-        rgba(237, 244, 247, 0.93);
+    background: rgba(237, 244, 247, 0.93);
 
     backdrop-filter: blur(12px);
 }
@@ -161,6 +164,9 @@ main {
 
     padding: 48px 52px;
 
+    position: relative;
+    overflow: hidden;
+
     background:
         linear-gradient(
             135deg,
@@ -172,9 +178,6 @@ main {
     border-radius: 20px;
 
     box-shadow: var(--shadow);
-
-    position: relative;
-    overflow: hidden;
 }
 
 
@@ -204,7 +207,7 @@ main {
 }
 
 
-/* Main profile */
+/* Profile text */
 
 .profile-main {
     position: relative;
@@ -312,7 +315,7 @@ main {
 }
 
 
-/* Story toggle */
+/* Story button */
 
 .story-toggle {
     margin-top: 22px;
@@ -400,12 +403,11 @@ main {
     object-position: center 25%;
 
     border-radius: 50%;
-
     border: 3px solid var(--white);
 }
 
 
-/* Profile action buttons */
+/* Profile buttons */
 
 .profile-actions {
     display: flex;
@@ -440,10 +442,11 @@ main {
 }
 
 
-/* QUICK STATS */
+/* Quick stats */
 
 .quick-stats {
     width: 100%;
+
     margin-top: 22px;
 
     border-top: 1px solid var(--border);
@@ -482,8 +485,9 @@ main {
     line-height: 1.4;
 }
 
+
 /* ==========================================================
-   EXPANDABLE STORY
+   EXPANDABLE PROFILE STORY
    ========================================================== */
 
 .full-story {
@@ -594,7 +598,7 @@ main {
 
 
 /* ==========================================================
-   EXPERIENCE
+   PROFESSIONAL EXPERIENCE
    ========================================================== */
 
 .experience-grid {
@@ -628,6 +632,9 @@ main {
     border-color:
         rgba(65, 109, 140, 0.55);
 }
+
+
+/* Featured 360Ed card */
 
 .featured-card {
     grid-column: 1 / -1;
@@ -696,6 +703,9 @@ main {
     font-size: 12px;
 }
 
+
+/* Experience description */
+
 .experience-description {
     grid-column: 2;
     grid-row: 1 / span 2;
@@ -704,8 +714,16 @@ main {
 
     color: var(--text);
 
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.experience-description p {
+    margin: 0 0 10px;
+}
+
+.experience-description p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -748,7 +766,125 @@ main {
 }
 
 
-/* Tags */
+/* ==========================================================
+   SELECTED PRODUCTS
+   ========================================================== */
+
+.selected-products {
+    grid-column: 1 / -1;
+
+    margin-top: 24px;
+}
+
+.products-heading {
+    margin: 0 0 16px;
+
+    color: var(--navy);
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+}
+
+.product-group {
+    margin-bottom: 18px;
+}
+
+.product-group:last-child {
+    margin-bottom: 0;
+}
+
+.product-category {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--blue);
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.product-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 9px;
+}
+
+.product-link {
+    min-height: 72px;
+
+    padding: 12px 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border: 1px solid var(--border);
+    border-radius: 9px;
+
+    background: var(--cream);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.product-link:hover {
+    transform: translateY(-3px);
+
+    border-color: var(--blue);
+
+    background: var(--white);
+
+    box-shadow:
+        0 8px 20px rgba(23, 55, 94, 0.08);
+}
+
+.product-link strong {
+    color: var(--navy);
+
+    font-size: 11px;
+    line-height: 1.4;
+}
+
+.product-link > span {
+    margin-top: 8px;
+
+    color: var(--muted);
+
+    font-size: 9px;
+}
+
+.product-link b {
+    display: inline-block;
+
+    margin-left: 3px;
+
+    color: var(--blue);
+
+    font-weight: normal;
+
+    transition: transform 0.2s ease;
+}
+
+.product-link:hover b {
+    transform:
+        translate(2px, -2px);
+}
+
+.public-product {
+    grid-column: 1 / -1;
+}
+
+
+/* Experience tags */
 
 .card-tags {
     grid-column: 1 / -1;
@@ -783,36 +919,6 @@ main {
 }
 
 
-/* Explore link */
-
-.card-link {
-    grid-column: 1 / -1;
-
-    width: fit-content;
-
-    margin-top: 17px;
-
-    color: var(--navy);
-
-    font-size: 12px;
-    font-weight: 700;
-
-    text-decoration: none;
-}
-
-.card-link span {
-    display: inline-block;
-
-    margin-left: 3px;
-
-    transition: transform 0.2s ease;
-}
-
-.card-link:hover span {
-    transform: translateX(5px);
-}
-
-
 /* ==========================================================
    RESEARCH
    ========================================================== */
@@ -829,20 +935,14 @@ main {
         max(30px, calc((100% - 1060px) / 2));
 }
 
-
-/* RESEARCH GRID */
-
 .research-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 16px;
+    gap: 18px;
 
-    align-items: start;
+    align-items: stretch;
 }
-
-
-/* RESEARCH CARD */
 
 .research-card {
     position: relative;
@@ -853,8 +953,6 @@ main {
 
     border: 1px solid var(--border);
     border-radius: 14px;
-
-    overflow: hidden;
 
     transition:
         transform 0.25s ease,
@@ -871,7 +969,7 @@ main {
 }
 
 
-/* LARGE BACKGROUND NUMBER */
+/* Research card number */
 
 .research-number {
     position: absolute;
@@ -879,8 +977,7 @@ main {
     right: 18px;
     top: 12px;
 
-    color:
-        rgba(65, 109, 140, 0.12);
+    color: rgba(65, 109, 140, 0.11);
 
     font-size: 48px;
     font-weight: 700;
@@ -889,14 +986,14 @@ main {
 }
 
 
-/* RESEARCH CATEGORY */
+/* Research field */
 
 .research-theme {
     position: relative;
 
-    max-width: 80%;
+    max-width: 78%;
 
-    margin: 0 0 24px;
+    margin: 0 0 22px;
 
     color: var(--blue);
 
@@ -906,205 +1003,50 @@ main {
 }
 
 
-/* RESEARCH TITLE */
+/* Research title */
 
 .research-card h3 {
     position: relative;
 
-    min-height: 72px;
-
-    margin: 0 0 12px;
+    margin: 0 0 18px;
 
     color: var(--navy);
 
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+
+/* Research institution */
+
+.research-institution {
+    margin-bottom: 16px;
+}
+
+.research-institution strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: var(--navy-dark);
+
+    font-size: 12px;
     line-height: 1.45;
 }
 
-
-/* SHORT DESCRIPTION */
-
-.research-short {
-    min-height: 78px;
-
-    margin: 0 0 16px;
-
-    color: var(--muted);
-
-    font-size: 11px;
-    line-height: 1.65;
-}
-
-
-/* RESEARCH TAGS */
-
-.research-tags {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 6px;
-
-    margin-bottom: 15px;
-}
-
-.research-tags span {
-    padding: 4px 8px;
-
-    border-radius: 30px;
-
-    background: var(--tag);
-    color: var(--blue);
-
-    font-size: 9px;
-
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
-}
-
-.research-tags span:hover {
-    transform: translateY(-2px);
-
-    background: #e2edf2;
-}
-
-
-/* RECOGNITION */
-
-.research-recognition {
-    width: fit-content;
-
-    margin: 0 0 13px;
-
-    padding: 5px 9px;
-
-    border-radius: 6px;
-
-    background:
-        rgba(65, 109, 140, 0.08);
-
-    color: var(--navy);
-
-    font-size: 10px;
-    font-weight: 700;
-}
-
-
-/* META */
-
-.research-meta {
+.research-institution span {
     display: block;
 
-    min-height: 30px;
+    color: var(--blue);
 
-    margin: 0 0 13px;
-
-    color: var(--muted);
-
-    font-size: 9px;
+    font-size: 10px;
     line-height: 1.5;
 }
 
 
-/* EXPLORE BUTTON */
+/* Research description */
 
-.research-toggle {
-    padding: 0;
-
-    border: none;
-    background: transparent;
-
-    color: var(--navy);
-
-    font-family: inherit;
-    font-size: 11px;
-    font-weight: 700;
-
-    cursor: pointer;
-}
-
-.research-toggle span {
-    display: inline-block;
-
-    margin-left: 3px;
-
-    transition: transform 0.2s ease;
-}
-
-.research-toggle:hover {
-    color: var(--blue);
-}
-
-.research-toggle:hover span {
-    transform: translateX(4px);
-}
-
-
-/* HIDDEN RESEARCH DETAILS */
-
-.research-details {
-    max-height: 0;
-
-    overflow: hidden;
-
-    opacity: 0;
-
-    margin-top: 0;
-
-    border-top: 1px solid transparent;
-
-    transition:
-        max-height 0.5s ease,
-        opacity 0.3s ease,
-        margin-top 0.4s ease,
-        padding-top 0.4s ease,
-        border-color 0.4s ease;
-}
-
-
-/* OPEN RESEARCH CARD */
-
-.research-card.open {
-    border-color: var(--blue);
-
-    box-shadow: var(--shadow);
-}
-
-.research-card.open .research-details {
-    max-height: 700px;
-
-    opacity: 1;
-
-    margin-top: 18px;
-    padding-top: 18px;
-
-    border-color: var(--border);
-}
-
-
-/* DETAILED INFORMATION */
-
-.research-detail {
-    margin-bottom: 17px;
-}
-
-.research-detail:last-child {
-    margin-bottom: 0;
-}
-
-.research-detail > span {
-    display: block;
-
-    margin-bottom: 4px;
-
-    color: var(--blue);
-
-    font-size: 8px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-.research-detail p {
+.research-short {
     margin: 0;
 
     color: var(--muted);
@@ -1114,16 +1056,24 @@ main {
 }
 
 
-/* RECOGNITION INSIDE DETAILS */
+/* Research recognition */
 
-.recognition-detail {
-    padding: 11px;
+.research-award {
+    width: fit-content;
 
-    border-radius: 8px;
+    margin-top: 18px;
 
-    background:
-        rgba(65, 109, 140, 0.06);
+    padding: 6px 10px;
+
+    border-radius: 30px;
+
+    background: var(--tag);
+    color: var(--navy);
+
+    font-size: 10px;
+    font-weight: 700;
 }
+
 
 /* ==========================================================
    EDUCATION
@@ -1304,8 +1254,8 @@ main {
 .contact-links a {
     padding: 8px 13px;
 
-    border: 1px solid
-        rgba(255, 255, 255, 0.35);
+    border:
+        1px solid rgba(255, 255, 255, 0.35);
 
     border-radius: 6px;
 
@@ -1348,12 +1298,13 @@ footer {
 
 footer a {
     color: var(--blue);
+
     text-decoration: none;
 }
 
 
 /* ==========================================================
-   RESPONSIVE
+   RESPONSIVE — TABLET / MOBILE
    ========================================================== */
 
 @media (max-width: 800px) {
@@ -1366,6 +1317,8 @@ footer a {
         display: none;
     }
 
+
+    /* Profile */
 
     .profile-section {
         margin-top: 12px;
@@ -1392,7 +1345,6 @@ footer a {
         font-size: 17px;
     }
 
-
     .profile-side {
         align-items: flex-start;
     }
@@ -1406,30 +1358,27 @@ footer a {
         justify-content: flex-start;
     }
 
+
+    /* Quick stats */
+
     .quick-stats {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 
     .quick-stat {
-        display: block;
-
         padding: 12px;
 
-        border-bottom: none;
         border-top: 1px solid var(--border);
+        border-bottom: none;
     }
 
     .quick-stat:not(:last-child) {
         border-right: 1px solid var(--border);
     }
 
-    .quick-stat strong {
-        display: block;
 
-        margin-bottom: 5px;
-    }
-
+    /* Story */
 
     .full-story {
         grid-template-columns: 1fr;
@@ -1439,6 +1388,8 @@ footer a {
         max-height: 900px;
     }
 
+
+    /* General sections */
 
     .content-section {
         padding: 42px 20px;
@@ -1452,6 +1403,8 @@ footer a {
         margin-top: 10px;
     }
 
+
+    /* Experience */
 
     .featured-card {
         display: block;
@@ -1471,24 +1424,39 @@ footer a {
     }
 
 
+    /* Products */
+
+    .product-links {
+        grid-template-columns: 1fr;
+    }
+
+    .public-product {
+        grid-column: auto;
+    }
+
+
+    /* Research */
+
     .research-grid {
         grid-template-columns: 1fr;
     }
 
-    .research-card {
-        min-height: 250px;
-    }
 
+    /* Education */
 
     .education-grid {
         grid-template-columns: 1fr;
     }
 
 
+    /* Leadership */
+
     .leadership-grid {
         grid-template-columns: 1fr;
     }
 
+
+    /* Contact */
 
     .contact-section {
         margin: 20px 15px;
@@ -1498,12 +1466,14 @@ footer a {
 
 
     footer {
-        padding:
-            15px 20px
-            30px;
+        padding: 15px 20px 30px;
     }
 }
 
+
+/* ==========================================================
+   RESPONSIVE — SMALL PHONE
+   ========================================================== */
 
 @media (max-width: 500px) {
 
@@ -1515,16 +1485,16 @@ footer a {
         line-height: 1.6;
     }
 
+
     .quick-stats {
         grid-template-columns: 1fr;
     }
 
     .quick-stat {
-        display: grid;
-        grid-template-columns: 65px 1fr;
-
         border-right: none !important;
+        border-bottom: 1px solid var(--border);
     }
+
 
     .experience-header {
         gap: 10px;
@@ -1534,12 +1504,13 @@ footer a {
         width: 115px;
     }
 
+
     .education-item {
         grid-template-columns: 80px 1fr;
     }
 
+
     .contact-links {
         flex-wrap: wrap;
     }
-
 }
